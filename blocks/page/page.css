@@ -1,0 +1,8 @@
+.page {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Prompt", Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
