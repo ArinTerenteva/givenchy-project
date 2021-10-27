@@ -28,7 +28,7 @@
     background-size: contain;
   }
 
-  @media (max-width: $br-small) {
+  @media (max-width: $screen-sm) {
     &__menu-icon {
       width: 24px;
     height: 24px;
@@ -44,7 +44,7 @@
     text-transform: uppercase;
   }
 
-  @media (max-width: $br-small) {
+  @media (max-width: $screen-sm) {
     &__menu-title {
       font-size: 14px;
     line-height: 20px;
@@ -56,14 +56,14 @@
     margin-bottom: -31px
   }
 
-  @media (max-width: $br-medium) {
+  @media (max-width: $screen-lg) {
     &__images {
       max-width: 486px;
       margin-bottom: 0;
     }
   }
   
-  @media (max-width: $br-small) {
+  @media (max-width: $screen-sm) {
     &__images {
       min-width: 320px;
     }
@@ -76,7 +76,7 @@
     justify-content: center;
   }
 
-  @media (max-width: $br-medium) {
+  @media (max-width: $screen-lg) {
     &__colomn {
       max-width: 485px;
       z-index: 1;
@@ -86,7 +86,7 @@
     }
   }
 
-  @media (max-width: $br-small) {
+  @media (max-width: $screen-sm) {
     &__colomn {
       max-width: 280px;
       margin: 0 auto;
@@ -104,14 +104,14 @@
     margin-bottom: 32px;
   }
 
-  @media (max-width: $br-medium) {
+  @media (max-width: $screen-lg) {
     &__title {
       font-size: 32px;
     line-height: 40px;
     }
   }
 
-  @media (max-width: $br-small) {
+  @media (max-width: $screen-sm) {
     &__title {
       font-size: 24px;
     line-height: 32px;
@@ -141,7 +141,7 @@
     filter: invert(100%);
   }
 
-  @media (max-width: $br-small) {
+  @media (max-width: $screen-sm) {
     &__button {
       max-width: 280px;
     height: 44px;
@@ -151,7 +151,7 @@
   }
 }
 
-@media (max-width: $br-medium) {
+@media (max-width: $screen-lg) {
   .header {
     padding: 0;
   }

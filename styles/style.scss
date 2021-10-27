@@ -1,7 +1,10 @@
-@import "../styles/variables/_breakpoints.scss";
+@import "../styles/variables/_screen.scss";
 
 
 @import "../styles/blocks/_page.scss";
 
 //block header
 @import "../styles/blocks/_header.scss";
+
+//block about
+@import "../styles/blocks/_about.scss";
