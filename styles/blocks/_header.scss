@@ -1,7 +1,8 @@
 .header {
   background-color: #e7e7e2;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
   overflow: hidden;
   position: relative;
   padding: 0 24px;
@@ -24,6 +25,14 @@
     height: 48px;
     margin-right: 16px;
     background-image: url(../../images/header-icon-menu.svg);
+    background-size: contain;
+  }
+
+  @media (max-width: $br-small) {
+    &__menu-icon {
+      width: 24px;
+    height: 24px;
+    }
   }
 
   &__menu-title {
@@ -35,9 +44,29 @@
     text-transform: uppercase;
   }
 
+  @media (max-width: $br-small) {
+    &__menu-title {
+      font-size: 14px;
+    line-height: 20px;
+    }
+  }
+
   &__images {
-    width: 50%;
-    height: 100%;
+    width: 50.3%;
+    margin-bottom: -31px
+  }
+
+  @media (max-width: $br-medium) {
+    &__images {
+      max-width: 486px;
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (max-width: $br-small) {
+    &__images {
+      min-width: 320px;
+    }
   }
 
   &__colomn {
@@ -45,6 +74,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @media (max-width: $br-medium) {
+    &__colomn {
+      max-width: 485px;
+      z-index: 1;
+      position: absolute;
+      top: auto;
+      right: 20px;
+    }
+  }
+
+  @media (max-width: $br-small) {
+    &__colomn {
+      max-width: 280px;
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -56,6 +102,20 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 32px;
+  }
+
+  @media (max-width: $br-medium) {
+    &__title {
+      font-size: 32px;
+    line-height: 40px;
+    }
+  }
+
+  @media (max-width: $br-small) {
+    &__title {
+      font-size: 24px;
+    line-height: 32px;
+    }
   }
 
   &__button {
@@ -79,5 +139,20 @@
   &__button:hover {
     cursor: pointer;
     filter: invert(100%);
+  }
+
+  @media (max-width: $br-small) {
+    &__button {
+      max-width: 280px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: $br-medium) {
+  .header {
+    padding: 0;
   }
 }
