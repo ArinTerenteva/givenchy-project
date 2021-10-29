@@ -1,0 +1,58 @@
+.looks {
+  padding: 80px 20px 0 20px;
+
+  &__title {
+    margin: 0;
+    width: 50%;
+    color: #0a0a0a;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $screen-lg) {
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    &__title {
+      width: 100%;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__container {
+      margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  @media (max-width: $screen-lg) {
+    &__container {
+      grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    &__container {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .looks {
+    padding-top: 40px;
+  }
+}
