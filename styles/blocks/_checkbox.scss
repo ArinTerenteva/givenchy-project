@@ -1,0 +1,58 @@
+.checkbox {
+  &__input {
+    display: none;
+  }
+
+  &__input:checked + &__label::after {
+    transform: scale(1);
+  }
+
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: inherit;
+    color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    transition: opacity 0.5s ease-out;
+  }
+
+  &__label:hover {
+    opacity: 60%;
+  }
+
+  &__label::before {
+    content: "";
+    flex: 0 0 20px;
+    align-self: start;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    margin-right: 10px;
+  }
+
+  &__label::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 12px;
+    height: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../images/footer-check-marck.svg);
+    transform: scale(0);
+    transition: transform 0.5s ease-out 0s;
+  }
+
+  @media (max-width: $screen-sm) {
+    &__item {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
