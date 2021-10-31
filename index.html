@@ -27,7 +27,7 @@
     </header>
 
     <main class="content">
-      <section class="about">
+      <section id="about" class="about">
         <div class="about__row">
           <h2 class="about__title">About</h2>
           <p class="about__paragraph-normal">
@@ -84,36 +84,102 @@
           />
         </div>
       </section>
-      <section class="looks">
+      <section id="looks" class="looks">
         <h2 class="looks__title">Looks</h2>
         <div class="looks__container">
-          <img src="./images/looks-look-one.jpg" class="looks__image" alt="look one" />
-          <img src="./images/looks-look-two.jpg" class="looks__image" alt="look two" />
-          <img src="./images/looks-look-three.jpg" class="looks__image" alt="look three" />
-          <img src="./images/looks-look-four.jpg" class="looks__image looks__image-none" alt="look four" />
-          <img src="./images/looks-look-five.jpg" class="looks__image" alt="look five" />
-          <img src="./images/looks-look-six.jpg" class="looks__image" alt="look six" />
-          <img src="./images/looks-look-seven.jpg" class="looks__image" alt="look seven" />
-          <img src="./images/looks-look-eight.jpg" class="looks__image looks__image-none" alt="look eight" />
+          <img
+            src="./images/looks-look-one.jpg"
+            class="looks__image"
+            alt="look one"
+          />
+          <img
+            src="./images/looks-look-two.jpg"
+            class="looks__image"
+            alt="look two"
+          />
+          <img
+            src="./images/looks-look-three.jpg"
+            class="looks__image"
+            alt="look three"
+          />
+          <img
+            src="./images/looks-look-four.jpg"
+            class="looks__image looks__image-none"
+            alt="look four"
+          />
+          <img
+            src="./images/looks-look-five.jpg"
+            class="looks__image"
+            alt="look five"
+          />
+          <img
+            src="./images/looks-look-six.jpg"
+            class="looks__image"
+            alt="look six"
+          />
+          <img
+            src="./images/looks-look-seven.jpg"
+            class="looks__image"
+            alt="look seven"
+          />
+          <img
+            src="./images/looks-look-eight.jpg"
+            class="looks__image looks__image-none"
+            alt="look eight"
+          />
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <h3 class="footer__text">Subscribe to the newsletterand be the first to know about new collection’s drop date and news</h3>
+    <section class="popup popup_type_menu">
+      <div class="popup__container">
+        <button
+          class="popup__button-close"
+          type="button"
+          id="button-close-menu"
+        ></button>
+        <nav class="popup__list">
+          <a href="#about" class="popup__item">About</a>
+          <a href="#looks" class="popup__item">Looks</a>
+          <a href="#subscribe" class="popup__item">Subscribe</a>
+        </nav>
+      </div>
+    </section>
+
+    <footer id="subscribe" class="footer">
+      <h3 class="footer__text">
+        Subscribe to the newsletterand be the first to know about new
+        collection’s drop date and news
+      </h3>
       <form class="form">
         <div class="form__item">
-          <input type="text" name="email" placeholder="Eneter your email here" class="form__email">
+          <input
+            type="text"
+            name="email"
+            placeholder="Eneter your email here"
+            class="form__email"
+          />
           <button type="submit" id="submit" class="form__button">Submit</button>
         </div>
         <div class="form__item">
           <div class="checkbox">
-            <input id="checkbox" checked type="checkbox" name="checkbox" class="checkbox__input"/>
-            <label for="checkbox" class="checkbox__label">I consent to the processing of my data by GIVENCHY in accordance with the conditions set forth in the Privacy Policy</label>
-          </div> 
+            <input
+              id="checkbox"
+              checked
+              type="checkbox"
+              name="checkbox"
+              class="checkbox__input"
+            />
+            <label for="checkbox" class="checkbox__label"
+              >I consent to the processing of my data by GIVENCHY in accordance
+              with the conditions set forth in the Privacy Policy</label
+            >
+          </div>
         </div>
       </form>
-      <p class="footer__copyright">&#169; 2021, Givenchy. Some rights reserved</p>
+      <p class="footer__copyright">
+        &#169; 2021, Givenchy. Some rights reserved
+      </p>
     </footer>
 
     <script src="./scripts/script.js"></script>
