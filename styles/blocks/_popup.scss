@@ -51,18 +51,18 @@
     padding: 0;
     left: 20px;
     top: 20px;
-    transition: filter 0.8s ease-out;
+    transition: opacity 0.8s ease-out;
   }
 
   &__button-close:hover {
     cursor: pointer;
-    filter: invert(100%);
+    opacity: 60%;
   }
 
   @media (max-width: $screen-sm) {
     &__button-close {
-        width: 24px;
-        height: 24px;
+      width: 24px;
+      height: 24px;
     }
   }
 
@@ -89,7 +89,7 @@
 
   @media (max-width: $screen-sm) {
     &__item {
-        margin-bottom: 40px;
+      margin-bottom: 40px;
     }
   }
 
@@ -99,5 +99,3 @@
     align-items: center;
   }
 }
-  
-  

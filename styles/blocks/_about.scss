@@ -64,6 +64,8 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    transform: translate3d(60px, 0, 0);
+    transition: all 0.3s ease-out;
   }
 
   @media (max-width: $screen-sm) {
@@ -103,6 +105,8 @@
   &__images-kendal {
     width: 50%;
     margin-right: 195px;
+    transform: translate3d(250px, 0, 0);
+    transition: all 0.3s ease-out;
   }
 
   @media (max-width: $screen-lg) {
@@ -125,12 +129,9 @@
     width: 50%;
     margin-right: -175px;
     z-index: 1;
-  }
-
-  @media (max-width: $screen-lg) {
-    &__paragraph-container {
-      margin-right: -175px;
-    }
+    opacity: 1;
+    transform: translate3d(-60px, 0, 0);
+    transition: all 0.3s ease-out;
   }
 
   @media (max-width: $screen-sm) {
@@ -141,6 +142,8 @@
 
   &__images-carti {
     width: 44.15%;
+    transform: translate3d(-60px, 0, 0);
+    transition: all 0.3s ease-out;
   }
 
   @media (max-width: $screen-lg) {
@@ -160,6 +163,8 @@
 
   &__images-bella {
     width: 62.5%;
+    transform: translate3d(120px, 0, 0);
+    transition: all 0.3s ease-out;
   }
 
   @media (max-width: $screen-lg) {

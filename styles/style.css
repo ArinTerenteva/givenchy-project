@@ -22,10 +22,11 @@
   position: absolute;
   left: 24px;
   top: 20px;
+  transition: opacity 0.5s ease-out;
 }
 .header__menu-items:hover {
   cursor: pointer;
-  filter: invert(100%);
+  opacity: 60%;
 }
 .header__menu-icon {
   width: 48px;
@@ -33,6 +34,8 @@
   margin-right: 16px;
   background-image: url(../../images/header-icon-menu.svg);
   background-size: contain;
+  border: none;
+  background-color: transparent;
 }
 @media (max-width: 767px) {
   .header__menu-icon {
@@ -127,7 +130,7 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   border: none;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 .header__button:hover {
   cursor: pointer;
@@ -205,6 +208,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
+  transform: translate3d(60px, 0, 0);
+  transition: all 0.3s ease-out;
 }
 @media (max-width: 767px) {
   .about__paragraph-normal {
@@ -238,6 +243,8 @@
 .about__images-kendal {
   width: 50%;
   margin-right: 195px;
+  transform: translate3d(250px, 0, 0);
+  transition: all 0.3s ease-out;
 }
 @media (max-width: 1439px) {
   .about__images-kendal {
@@ -257,11 +264,9 @@
   width: 50%;
   margin-right: -175px;
   z-index: 1;
-}
-@media (max-width: 1439px) {
-  .about__paragraph-container {
-    margin-right: -175px;
-  }
+  opacity: 1;
+  transform: translate3d(-60px, 0, 0);
+  transition: all 0.3s ease-out;
 }
 @media (max-width: 767px) {
   .about__paragraph-container {
@@ -270,6 +275,8 @@
 }
 .about__images-carti {
   width: 44.15%;
+  transform: translate3d(-60px, 0, 0);
+  transition: all 0.3s ease-out;
 }
 @media (max-width: 1439px) {
   .about__images-carti {
@@ -286,6 +293,8 @@
 }
 .about__images-bella {
   width: 62.5%;
+  transform: translate3d(120px, 0, 0);
+  transition: all 0.3s ease-out;
 }
 @media (max-width: 1439px) {
   .about__images-bella {
@@ -353,6 +362,19 @@
 }
 .looks__image {
   width: 100%;
+}
+.looks__image-none {
+  display: block;
+}
+@media (max-width: 1439px) {
+  .looks__image-none {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .looks__image-none {
+    display: block;
+  }
 }
 
 @media (max-width: 767px) {
@@ -599,11 +621,11 @@
   padding: 0;
   left: 20px;
   top: 20px;
-  transition: filter 0.8s ease-out;
+  transition: opacity 0.8s ease-out;
 }
 .popup__button-close:hover {
   cursor: pointer;
-  filter: invert(100%);
+  opacity: 60%;
 }
 @media (max-width: 767px) {
   .popup__button-close {
@@ -638,4 +660,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.fade {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

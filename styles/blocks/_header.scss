@@ -13,11 +13,12 @@
     position: absolute;
     left: 24px;
     top: 20px;
+    transition: opacity 0.5s ease-out;
   }
 
   &__menu-items:hover {
     cursor: pointer;
-    filter: invert(100%);
+    opacity: 60%;
   }
 
   &__menu-icon {
@@ -26,12 +27,14 @@
     margin-right: 16px;
     background-image: url(../../images/header-icon-menu.svg);
     background-size: contain;
+    border: none;
+    background-color: transparent;
   }
 
   @media (max-width: $screen-sm) {
     &__menu-icon {
       width: 24px;
-    height: 24px;
+      height: 24px;
     }
   }
 
@@ -47,13 +50,13 @@
   @media (max-width: $screen-sm) {
     &__menu-title {
       font-size: 14px;
-    line-height: 20px;
+      line-height: 20px;
     }
   }
 
   &__images {
     width: 50.3%;
-    margin-bottom: -31px
+    margin-bottom: -31px;
   }
 
   @media (max-width: $screen-lg) {
@@ -62,7 +65,7 @@
       margin-bottom: 0;
     }
   }
-  
+
   @media (max-width: $screen-sm) {
     &__images {
       min-width: 320px;
@@ -107,14 +110,14 @@
   @media (max-width: $screen-lg) {
     &__title {
       font-size: 32px;
-    line-height: 40px;
+      line-height: 40px;
     }
   }
 
   @media (max-width: $screen-sm) {
     &__title {
       font-size: 24px;
-    line-height: 32px;
+      line-height: 32px;
     }
   }
 
@@ -133,7 +136,7 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     border: none;
-    transition: 0.3s;
+    transition: 0.8s;
   }
 
   &__button:hover {
@@ -144,9 +147,9 @@
   @media (max-width: $screen-sm) {
     &__button {
       max-width: 280px;
-    height: 44px;
-    font-size: 14px;
-    line-height: 20px;
+      height: 44px;
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }
