@@ -1,0 +1,39 @@
+.menu {
+  &__button-opend {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    background-image: url(../images/header-icon-menu.svg);
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__button-opend:hover {
+    cursor: pointer;
+    opacity: 60%;
+  }
+
+  @media (max-width: $screen-sm) {
+    &__button-opend {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__title {
+    color: $dark;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $screen-sm) {
+    &__title {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

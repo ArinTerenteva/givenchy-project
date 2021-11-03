@@ -1,4 +1,5 @@
 @import "../styles/variables/_screen.scss";
+@import "../styles/variables/_colors.scss";
 
 
 @import "../styles/blocks/_page.scss";
@@ -26,3 +27,12 @@
 
 //animstion
 @import "../styles/blocks/_fade.scss";
+
+//menu
+@import "../styles/blocks/_menu.scss";
+
+//li
+@import "../styles/blocks/_li.scss";
+
+//ul
+@import "../styles/blocks/_ul.scss";

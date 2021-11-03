@@ -14,7 +14,7 @@
     font-size: 16px;
     line-height: 24px;
     font-family: inherit;
-    color: #ffffff;
+    color: $bright-light;
     position: relative;
     cursor: pointer;
     transition: opacity 0.5s ease-out;
@@ -30,7 +30,7 @@
     align-self: start;
     height: 20px;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid $bright-light;
     margin-right: 10px;
   }
 
@@ -44,7 +44,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../images/footer-check-marck.svg);
+    background-image: url(../images/footer-check-marck.svg);
     transform: scale(0);
     transition: transform 0.5s ease-out 0s;
   }

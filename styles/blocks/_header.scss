@@ -1,58 +1,11 @@
 .header {
-  background-color: #e7e7e2;
+  background-color: $light;
   display: flex;
   justify-content: start;
   align-items: center;
   overflow: hidden;
   position: relative;
   padding: 0 24px;
-
-  &__menu-items {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 24px;
-    top: 20px;
-    transition: opacity 0.5s ease-out;
-  }
-
-  &__menu-items:hover {
-    cursor: pointer;
-    opacity: 60%;
-  }
-
-  &__menu-icon {
-    width: 48px;
-    height: 48px;
-    margin-right: 16px;
-    background-image: url(../../images/header-icon-menu.svg);
-    background-size: contain;
-    border: none;
-    background-color: transparent;
-  }
-
-  @media (max-width: $screen-sm) {
-    &__menu-icon {
-      width: 24px;
-      height: 24px;
-    }
-  }
-
-  &__menu-title {
-    color: #0a0a0a;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-  }
-
-  @media (max-width: $screen-sm) {
-    &__menu-title {
-      font-size: 14px;
-      line-height: 20px;
-    }
-  }
 
   &__images {
     width: 50.3%;
@@ -98,7 +51,7 @@
 
   &__title {
     margin: 0;
-    color: #0a0a0a;
+    color: $dark;
     font-weight: 500;
     font-size: 48px;
     line-height: 64px;
@@ -126,10 +79,10 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    background-color: #0a0a0a;
+    background-color: $dark;
     width: 350px;
     height: 48px;
-    color: #ffffff;
+    color: $bright-light;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -137,6 +90,7 @@
     text-transform: uppercase;
     border: none;
     transition: 0.8s;
+    text-decoration: none;
   }
 
   &__button:hover {
@@ -151,6 +105,15 @@
       font-size: 14px;
       line-height: 20px;
     }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 24px;
+    top: 20px;
+    transition: opacity 0.5s ease-out;
   }
 }
 

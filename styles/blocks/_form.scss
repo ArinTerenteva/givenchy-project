@@ -26,14 +26,20 @@
     width: 592px;
     height: 48px;
     box-sizing: border-box;
-    border: 1px solid#E7E7E2;
+    border: 1px solid $light;
     background-color: transparent;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     font-family: inherit;
-    color: #ffffff;
+    color: $bright-light;
     z-index: 1;
+  }
+
+  @media (max-width: $screen-lg) {
+    &__email {
+      width: 378px;
+    }
   }
 
   @media (max-width: $screen-sm) {
@@ -48,14 +54,14 @@
     width: 108px;
     height: 48px;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: $bright-light;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.5px;
     font-family: inherit;
-    color: #0a0a0a;
+    color: $dark;
     transition: filter 0.8s ease-out;
   }
 
@@ -82,6 +88,7 @@
 
 @media (max-width: $screen-sm) {
   .form {
+    width: 100%;
     max-width: 280px;
   }
 }

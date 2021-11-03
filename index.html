@@ -9,9 +9,9 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__menu-items">
-        <div class="header__menu-icon"></div>
-        <div class="header__menu-title">Menu</div>
+      <div class="header__items">
+        <button type="button" class="menu__button-opend"></button>
+        <div class="menu__title">Menu</div>
       </div>
       <img
         src="./images/header-image.jpg"
@@ -104,7 +104,7 @@
           />
           <img
             src="./images/looks-look-four.jpg"
-            class="looks__image looks__image-none"
+            class="looks__image looks__image_visible"
             alt="look four"
           />
           <img
@@ -124,7 +124,7 @@
           />
           <img
             src="./images/looks-look-eight.jpg"
-            class="looks__image looks__image-none"
+            class="looks__image looks__image_visible"
             alt="look eight"
           />
         </div>
@@ -139,9 +139,11 @@
           id="button-close-menu"
         ></button>
         <nav class="popup__list">
-          <a href="#about" class="popup__item" id="popup__item-about">About</a>
-          <a href="#looks" class="popup__item" id="popup__item-looks">Looks</a>
-          <a href="#subscribe" class="popup__item" id="popup__item-subscribe">Subscribe</a>
+          <ul class="ul">
+          <li class="li"><a class="popup__item" id="popup__item-about" href="#about">About</a></li>
+          <li class="li"><a class="popup__item" id="popup__item-looks" href="#looks">Looks</a></li>
+          <li class="li"><a class="popup__item" id="popup__item-subscribe" href="#subscribe">Subscribe</a></li>
+        </ul>
         </nav>
       </div>
     </section>

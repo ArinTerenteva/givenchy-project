@@ -1,5 +1,6 @@
 .about {
   padding: 80px 20px 0 20px;
+  overflow: hidden;
 
   &__row {
     display: flex;
@@ -34,7 +35,7 @@
   &__title {
     margin: 0;
     width: 50%;
-    color: #0a0a0a;
+    color: $dark;
     font-weight: 500;
     font-size: 48px;
     line-height: 64px;
@@ -54,13 +55,14 @@
       width: 100%;
       font-size: 24px;
       line-height: 32px;
+      margin-bottom: 20px;
     }
   }
 
   &__paragraph-normal {
     margin: auto 0;
     width: 50%;
-    color: #0a0a0a;
+    color: $dark;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
@@ -78,7 +80,7 @@
 
   &__paragraph-medium {
     margin: 0;
-    color: #0a0a0a;
+    color: $dark;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
@@ -173,10 +175,11 @@
     }
   }
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: $screen-sm) {
     &__images-bella {
       margin: 0 auto;
       min-width: 280px;
+      margin-bottom: 20px;
     }
   }
 }

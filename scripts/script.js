@@ -1,5 +1,5 @@
 //opened popup menu
-const buttonOpenMenu = document.querySelector(".header__menu-items");
+const buttonOpenMenu = document.querySelector(".menu__button-opend");
 const popupMenu = document.querySelector(".popup_type_menu");
 const buttonCloseMenu = document.querySelector("#button-close-menu");
 //navigation
