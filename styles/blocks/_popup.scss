@@ -1,7 +1,7 @@
 .popup {
   width: 100%;
   height: 100%;
-  background-color: rgb($container-dark 0.5);
+  background-color: $container-dark-opasity;
   border: none;
   position: fixed;
   top: 0;
@@ -29,7 +29,6 @@
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 0 25px rgba($container-dark 0.15);
   }
 
   @media (max-width: $screen-sm) {
@@ -40,15 +39,14 @@
   }
 
   &__button-close {
+    @include none-style-button;
     background-image: url(../images/popup-button-close.svg);
     background-size: cover;
     background-color: $container-dark;
-    border: none;
     width: 48px;
     height: 48px;
     display: block;
     position: absolute;
-    padding: 0;
     left: 20px;
     top: 20px;
     transition: opacity 0.8s ease-out;

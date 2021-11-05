@@ -2,10 +2,10 @@
   &__button-opend {
     width: 48px;
     height: 48px;
+    @include none-style-button;
     margin-right: 16px;
     background-image: url(../images/header-icon-menu.svg);
     background-size: contain;
-    border: none;
     background-color: transparent;
   }
 

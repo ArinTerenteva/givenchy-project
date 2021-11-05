@@ -1,0 +1,5 @@
+@mixin none-style-button($border: none, $padding: 0px, $margin: 0px){
+  border: $border;
+  padding: $padding; 
+  margin: $margin;
+}
