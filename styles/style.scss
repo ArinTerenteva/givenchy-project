@@ -1,6 +1,9 @@
+@import url(../styles/vendor/fonts.css);
+@import url(../styles/vendor/normalize.css);
+
 @import "../styles/variables/_screen.scss";
 @import "../styles/variables/_colors.scss";
-@import"./_mixins.scss";
+@import"../styles/_mixins.scss";
 
 @import "../styles/blocks/_page.scss";
 
