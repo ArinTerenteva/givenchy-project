@@ -3,21 +3,223 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Givenchy Spring/Summer 2021</title>
   </head>
   <body class="page">
     <header class="header">
-        
+      <div class="header__container">
+        <div class="header__items">
+          <button type="button" class="menu__button-opend"></button>
+          <div class="menu__title">Menu</div>
+        </div>
+        <img
+          src="./images/header-image.jpg"
+          class="header__images"
+          alt="image Playboi Carti"
+        />
+        <div class="header__colomn">
+          <h1 class="header__title">
+            Givenchy<br />spring summer 2021 by matthew m. williams
+          </h1>
+          <a href="" class="header__button">Subscribe to collection’s news</a>
+        </div>
+      </div>
     </header>
 
     <main class="content">
-
+      <section id="about" class="about">
+        <div class="about__row">
+          <h2 class="about__title" id="about__title">About</h2>
+          <p class="about__paragraph-normal" id="about__paragraph-normal-one">
+            The Spring-Summer ‘21 collection explores Givenchy in the form of a
+            stream of consciousness for Williams and is a ‘sampler’ of what is
+            to come.
+          </p>
+        </div>
+        <div class="about__row">
+          <div
+            class="about__paragraph-container"
+            id="about__paragraph-container-one"
+          >
+            <p class="about__paragraph-medium">
+              “To me, fashion expresses a point of view where formality and
+              informality, construction and comfort co-exist. My ethos is about
+              the luxury of infusing clothes with your own personality, not
+              being worn by them,”
+            </p>
+            <p class="about__paragraph-medium">Matthew M. Williams.</p>
+          </div>
+          <img
+            src="./images/about-kendalljenner.jpg"
+            class="about__images-kendal"
+            alt="image Kendall Jener"
+          />
+        </div>
+        <div class="about__row">
+          <img
+            src="./images/about-playboicarti.jpg"
+            class="about__images-carti"
+            alt="image Playboi Carti"
+          />
+          <p class="about__paragraph-normal" id="about__paragraph-normal-two">
+            Matthew M. Williams reveals his vision with help from an all-star
+            lineup of likeminded artists. The Creative Director called on close
+            friends in his tight-knit community of artists. Kendall Jenner,
+            Bella Hadid, Playboi Carti and the supermodels Anok Yai and Liam
+            Powers were each invited to put their own stamp on key pieces, the
+            better to highlight the importance of cultivating a powerful
+            personal style.
+          </p>
+        </div>
+        <div class="about__row">
+          <div
+            class="about__paragraph-container"
+            id="about__paragraph-container-two"
+          >
+            <p class="about__paragraph-medium">
+              “In each of these portraits, a strong character wears a look that
+              reflects who they are: they’re the ones who bring the clothes to
+              life.”
+            </p>
+            <p class="about__paragraph-medium">Matthew M. Williams.</p>
+          </div>
+          <img
+            src="./images/about-bellahadid.jpg"
+            class="about__images-bella"
+            alt="image Bella Hadid"
+          />
+        </div>
+      </section>
+      <section id="looks" class="looks">
+        <h2 class="looks__title">Looks</h2>
+        <div class="looks__container">
+          <img
+            src="./images/looks-look-one.jpg"
+            class="looks__image"
+            alt="look one"
+            id="looks__image-one"
+          />
+          <img
+            src="./images/looks-look-two.jpg"
+            class="looks__image"
+            alt="look two"
+          />
+          <img
+            src="./images/looks-look-three.jpg"
+            class="looks__image"
+            alt="look three"
+          />
+          <img
+            src="./images/looks-look-four.jpg"
+            class="looks__image looks__image_unvisible"
+            alt="look four"
+            id="looks__image-four"
+          />
+          <img
+            src="./images/looks-look-five.jpg"
+            class="looks__image"
+            alt="look five"
+          />
+          <img
+            src="./images/looks-look-six.jpg"
+            class="looks__image"
+            alt="look six"
+          />
+          <img
+            src="./images/looks-look-seven.jpg"
+            class="looks__image"
+            alt="look seven"
+            id="looks__image-seven"
+          />
+          <img
+            src="./images/looks-look-eight.jpg"
+            class="looks__image looks__image_unvisible"
+            alt="look eight"
+          />
+          <img
+            src="./images/looks-look-nine.jpg"
+            class="looks__image looks__image_visible"
+            alt="look nine"
+          />
+          <img
+            src="./images/looks-look-ten.jpg"
+            class="looks__image looks__image_visible"
+            alt="look ten"
+            id="looks__image-ten"
+          />
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
+    <section class="popup popup_type_menu">
+      <div class="popup__container">
+        <button
+          class="popup__button-close"
+          type="button"
+          id="button-close-menu"
+        ></button>
+        <nav class="popup__list">
+          <ul class="ul">
+            <li class="li">
+              <a class="popup__item" id="popup__item-about" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="li">
+              <a class="popup__item" id="popup__item-looks" href="#looks"
+                >Looks</a
+              >
+            </li>
+            <li class="li">
+              <a
+                class="popup__item"
+                id="popup__item-subscribe"
+                href="#subscribe"
+                >Subscribe</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
+    <footer id="subscribe" class="footer">
+      <div class="footer__container">
+      <h3 class="footer__text">
+        Subscribe to the newsletterand be the first to know about new
+        collection’s drop date and news
+      </h3>
+      <form class="form">
+        <div class="form__item">
+          <input
+            type="text"
+            name="email"
+            placeholder="Eneter your email here"
+            class="form__email"
+          />
+          <button type="submit" id="submit" class="form__button">Submit</button>
+        </div>
+        <div class="form__item">
+          <div class="checkbox">
+            <input
+              id="checkbox"
+              checked
+              type="checkbox"
+              name="checkbox"
+              class="checkbox__input"
+            />
+            <label for="checkbox" class="checkbox__label"
+              >I consent to the processing of my data by GIVENCHY in accordance
+              with the conditions set forth in the Privacy Policy</label
+            >
+          </div>
+        </div>
+      </form>
+      <p class="footer__copyright">
+        &#169; 2021, Givenchy. Some rights reserved
+      </p>
+    </div>
     </footer>
 
     <script src="./scripts/script.js"></script>

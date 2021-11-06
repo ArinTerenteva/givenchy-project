@@ -1,0 +1,15 @@
+.li {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  list-style-type: none;
+}
+.li:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: $screen-sm) {
+  .li {
+    margin-bottom: 40px;
+  }
+}

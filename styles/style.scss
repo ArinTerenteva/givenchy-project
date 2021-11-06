@@ -1,2 +1,42 @@
+@import url(../styles/vendor/fonts.css);
+@import url(../styles/vendor/normalize.css);
 
-@import "../blocks/page/_page.scss";
+@import "../styles/variables/_screen.scss";
+@import "../styles/variables/_colors.scss";
+@import"../styles/_mixins.scss";
+
+@import "../styles/blocks/_page.scss";
+
+//block header
+@import "../styles/blocks/_header.scss";
+
+//block about
+@import "../styles/blocks/_about.scss";
+
+//block look
+@import "../styles/blocks/_looks.scss";
+
+//block footer
+@import "../styles/blocks/_footer.scss";
+
+//form 
+@import "../styles/blocks/_form.scss";
+
+//checkbox
+@import "../styles/blocks/_checkbox.scss";
+
+//popup
+@import "../styles/blocks/_popup.scss";
+
+//animstion
+@import "../styles/blocks/_fade.scss";
+
+//menu
+@import "../styles/blocks/_menu.scss";
+
+//li
+@import "../styles/blocks/_li.scss";
+
+//ul
+@import "../styles/blocks/_ul.scss";
+
