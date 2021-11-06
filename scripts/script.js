@@ -108,3 +108,58 @@ function isElementVisible(el) {
 
   return top + height >= 0 && height + window.innerHeight >= bottom;
 }
+
+const elementOne = document.getElementById("looks__image-one");
+const elementSeven = document.getElementById("looks__image-seven");
+const elementFour = document.getElementById("looks__image-four");
+const elementTen = document.getElementById("looks__image-ten");
+
+const images = [
+  "./images/looks-look-one.jpg",
+  "./images/looks-look-two.jpg",
+  "./images/looks-look-three.jpg",
+  "./images/looks-look-four.jpg",
+  "./images/looks-look-five.jpg",
+  "./images/looks-look-six.jpg",
+  "./images/looks-look-seven.jpg",
+  "./images/looks-look-eight.jpg",
+  "./images/looks-look-nine.jpg",
+  "./images/looks-look-ten.jpg",
+];
+
+function changeImage(elementOne, images) {
+  setInterval(function() {
+    const randomImages = Math.floor(Math.random() * images.length);
+    elementOne.src = images[randomImages];
+  }, 1000)
+}
+
+changeImage(elementOne, images);
+
+
+function changeImage(elementSeven, images) {
+  setInterval(function() {
+    const randomImages = Math.floor(Math.random() * images.length);
+    elementSeven.src = images[randomImages];
+  }, 1000)
+}
+
+changeImage(elementSeven, images);
+
+function changeImage(elementFour, images) {
+  setInterval(function() {
+    const randomImages = Math.floor(Math.random() * images.length);
+    elementFour.src = images[randomImages];
+  }, 1000)
+}
+
+changeImage(elementFour, images);
+
+function changeImage(elementTen, images) {
+  setInterval(function() {
+    const randomImages = Math.floor(Math.random() * images.length);
+    elementTen.src = images[randomImages];
+  }, 1000)
+}
+
+changeImage(elementTen, images);

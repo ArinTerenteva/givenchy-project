@@ -51,14 +51,18 @@
     width: 100%;
   }
 
-  &__image_visible {
+  &__image_unvisible {
     display: block;
   }
 
   @media (max-width: $screen-lg) {
-    &__image_visible {
+    &__image_unvisible {
       display: none;
     }
+  }
+
+  &__image_visible {
+    display: none;
   }
 
   @media (max-width: $screen-sm) {
