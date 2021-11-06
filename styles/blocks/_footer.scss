@@ -1,6 +1,19 @@
 .footer {
+  width: 100%;
   background-color: $dark;
   margin-top: 80px;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    &__container {
+      max-width: 768px;
+    }
+  }
 
   &__text {
     margin: 0 auto;
@@ -64,6 +77,6 @@
 @media (max-width: $screen-sm) {
   .footer {
     margin-top: 40px;
-    padding: 0 20px;
+    
   }
 }

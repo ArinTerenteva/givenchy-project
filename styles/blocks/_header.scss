@@ -1,11 +1,19 @@
 .header {
+  width: 100%;
   background-color: $light;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  padding: 0 24px;
+  
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0 24px;
+    z-index: 1;
+  }
 
   &__images {
     width: 50.3%;

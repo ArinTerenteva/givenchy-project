@@ -1,4 +1,6 @@
 .looks {
+  margin: 0 auto;
+  max-width: 1440px;
   padding: 80px 20px 0 20px;
 
   &__title {
@@ -35,13 +37,19 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: $screen-m) {
     &__container {
       grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
     }
   }
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-xs) {
+    &__container {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  }
+
+  @media (max-width: $screen-xxs) {
     &__container {
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
